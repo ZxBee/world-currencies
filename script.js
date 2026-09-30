@@ -1,6 +1,6 @@
 /* =========================================================
    WORLD CURRENCIES
-   MAIN JAVASCRIPT
+   FINAL MASTER JAVASCRIPT
    ========================================================= */
 
 
@@ -10,7 +10,6 @@
    ========================================================= */
 
 const countryData = [
-
     ["Afghanistan","🇦🇫","Afghani","AFN","؋","Asia"],
     ["Albania","🇦🇱","Lek","ALL","L","Europe"],
     ["Algeria","🇩🇿","Algerian Dinar","DZD","دج","Africa"],
@@ -229,7 +228,6 @@ const countryData = [
 
     ["Zambia","🇿🇲","Zambian Kwacha","ZMW","ZK","Africa"],
     ["Zimbabwe","🇿🇼","Zimbabwe Gold","ZWG","ZiG","Africa"]
-
 ];
 
 
@@ -238,150 +236,35 @@ const countryData = [
    ========================================================= */
 
 const numericCodes = {
-
-    AFN: "971",
-    ALL: "008",
-    DZD: "012",
-    AOA: "973",
-    XCD: "951",
-    ARS: "032",
-    AMD: "051",
-    AUD: "036",
-    EUR: "978",
-    AZN: "944",
-    BSD: "044",
-    BHD: "048",
-    BDT: "050",
-    BBD: "052",
-    BYN: "933",
-    BZD: "084",
-    XOF: "952",
-    BTN: "064",
-    BOB: "068",
-    BAM: "977",
-    BWP: "072",
-    BRL: "986",
-    BND: "096",
-    BIF: "108",
-    CVE: "132",
-    KHR: "116",
-    XAF: "950",
-    CAD: "124",
-    CLP: "152",
-    CNY: "156",
-    COP: "170",
-    KMF: "174",
-    CRC: "188",
-    CUP: "192",
-    CZK: "203",
-    CDF: "976",
-    DKK: "208",
-    DJF: "262",
-    DOP: "214",
-    USD: "840",
-    EGP: "818",
-    ERN: "232",
-    ETB: "230",
-    SZL: "748",
-    FJD: "242",
-    GMD: "270",
-    GEL: "981",
-    GHS: "936",
-    GTQ: "320",
-    GNF: "324",
-    GYD: "328",
-    HTG: "332",
-    HNL: "340",
-    HUF: "348",
-    ISK: "352",
-    INR: "356",
-    IDR: "360",
-    IRR: "364",
-    IQD: "368",
-    ILS: "376",
-    JMD: "388",
-    JPY: "392",
-    JOD: "400",
-    KZT: "398",
-    KES: "404",
-    KGS: "417",
-    KWD: "414",
-    LAK: "418",
-    LBP: "422",
-    LSL: "426",
-    LRD: "430",
-    LYD: "434",
-    CHF: "756",
-    MGA: "969",
-    MWK: "454",
-    MYR: "458",
-    MVR: "462",
-    MRO: "478",
-    MRU: "929",
-    MUR: "480",
-    MXN: "484",
-    MDL: "498",
-    MNT: "496",
-    MAD: "504",
-    MZN: "943",
-    MMK: "104",
-    NAD: "516",
-    NPR: "524",
-    NZD: "554",
-    NIO: "558",
-    NGN: "566",
-    KPW: "408",
-    MKD: "807",
-    NOK: "578",
-    OMR: "512",
-    PKR: "586",
-    PAB: "590",
-    PGK: "598",
-    PYG: "600",
-    PEN: "604",
-    PHP: "608",
-    PLN: "985",
-    QAR: "634",
-    RON: "946",
-    RUB: "643",
-    RWF: "646",
-    WST: "882",
-    STN: "930",
-    SAR: "682",
-    RSD: "941",
-    SCR: "690",
-    SLE: "925",
-    SGD: "702",
-    SBD: "090",
-    SOS: "706",
-    ZAR: "710",
-    KRW: "410",
-    SSP: "728",
-    LKR: "144",
-    SDG: "938",
-    SRD: "968",
-    SEK: "752",
-    SYP: "760",
-    TJS: "972",
-    TZS: "834",
-    THB: "764",
-    TMT: "934",
-    TOP: "776",
-    TTD: "780",
-    TND: "788",
-    TRY: "949",
-    UAH: "980",
-    AED: "784",
-    GBP: "826",
-    UYU: "858",
-    UZS: "860",
-    VUV: "548",
-    VES: "928",
-    VND: "704",
-    YER: "886",
-    ZMW: "967",
-    ZWG: "924"
-
+    AFN:"971", ALL:"008", DZD:"012", AOA:"973", XCD:"951",
+    ARS:"032", AMD:"051", AUD:"036", EUR:"978", AZN:"944",
+    BSD:"044", BHD:"048", BDT:"050", BBD:"052", BYN:"933",
+    BZD:"084", XOF:"952", BTN:"064", BOB:"068", BAM:"977",
+    BWP:"072", BRL:"986", BND:"096", BIF:"108", CVE:"132",
+    KHR:"116", XAF:"950", CAD:"124", CLP:"152", CNY:"156",
+    COP:"170", KMF:"174", CRC:"188", CUP:"192", CZK:"203",
+    CDF:"976", DKK:"208", DJF:"262", DOP:"214", USD:"840",
+    EGP:"818", ERN:"232", ETB:"230", SZL:"748", FJD:"242",
+    GMD:"270", GEL:"981", GHS:"936", GTQ:"320", GNF:"324",
+    GYD:"328", HTG:"332", HNL:"340", HUF:"348", ISK:"352",
+    INR:"356", IDR:"360", IRR:"364", IQD:"368", ILS:"376",
+    JMD:"388", JPY:"392", JOD:"400", KZT:"398", KES:"404",
+    KGS:"417", KWD:"414", LAK:"418", LBP:"422", LSL:"426",
+    LRD:"430", LYD:"434", CHF:"756", MGA:"969", MWK:"454",
+    MYR:"458", MVR:"462", MRU:"929", MUR:"480", MXN:"484",
+    MDL:"498", MNT:"496", MAD:"504", MZN:"943", MMK:"104",
+    NAD:"516", NPR:"524", NZD:"554", NIO:"558", NGN:"566",
+    KPW:"408", MKD:"807", NOK:"578", OMR:"512", PKR:"586",
+    PAB:"590", PGK:"598", PYG:"600", PEN:"604", PHP:"608",
+    PLN:"985", QAR:"634", RON:"946", RUB:"643", RWF:"646",
+    WST:"882", STN:"930", SAR:"682", RSD:"941", SCR:"690",
+    SLE:"925", SGD:"702", SBD:"090", SOS:"706", ZAR:"710",
+    KRW:"410", SSP:"728", LKR:"144", SDG:"938", SRD:"968",
+    SEK:"752", SYP:"760", TJS:"972", TZS:"834", THB:"764",
+    TMT:"934", TOP:"776", TTD:"780", TND:"788", TRY:"949",
+    UAH:"980", AED:"784", GBP:"826", UYU:"858", UZS:"860",
+    VUV:"548", VES:"928", VND:"704", YER:"886", ZMW:"967",
+    ZWG:"924"
 };
 
 
@@ -390,553 +273,116 @@ const numericCodes = {
    ========================================================= */
 
 const currencyHistory = {
-
-    AFN: {
-        originalName: "Afghani",
-        firstUse: "1925",
-        introducedYear: "1925",
-        introducedBy: "Kingdom of Afghanistan",
-        family: "Afghani",
-        minorUnit: "1 Afghani = 100 pul"
-    },
-
-    ALL: {
-        originalName: "Lek",
-        firstUse: "1926",
-        introducedYear: "1926",
-        introducedBy: "Bank of Albania",
-        family: "Lek",
-        minorUnit: "1 Lek = 100 qindarka"
-    },
-
-    EUR: {
-        originalName: "Euro",
-        firstUse: "1999",
-        introducedYear: "1999 / 2002",
-        introducedBy: "European Monetary Union",
-        family: "Euro",
-        minorUnit: "1 Euro = 100 cents"
-    },
-
-    GBP: {
-        originalName: "Pound Sterling",
-        firstUse: "8th century",
-        introducedYear: "1707",
-        introducedBy: "Kingdom of Great Britain / later United Kingdom",
-        family: "Pound",
-        minorUnit: "1 Pound = 100 pence"
-    },
-
-    USD: {
-        originalName: "United States Dollar",
-        firstUse: "1792",
-        introducedYear: "1792",
-        introducedBy: "United States government",
-        family: "Dollar",
-        minorUnit: "1 Dollar = 100 cents"
-    },
-
-    JPY: {
-        originalName: "Yen",
-        firstUse: "1871",
-        introducedYear: "1871",
-        introducedBy: "Government of Japan",
-        family: "Yen",
-        minorUnit: "No current minor unit in ordinary use"
-    },
-
-    INR: {
-        originalName: "Indian Rupee",
-        firstUse: "16th century",
-        introducedYear: "2010 symbol / modern system",
-        introducedBy: "Reserve Bank of India / Government of India",
-        family: "Rupee",
-        minorUnit: "1 Rupee = 100 paise"
-    },
-
-    LKR: {
-        originalName: "Sri Lankan Rupee",
-        firstUse: "1872",
-        introducedYear: "1949 monetary authority",
-        introducedBy: "Central Bank of Ceylon",
-        family: "Rupee",
-        minorUnit: "1 Rupee = 100 cents"
-    },
-
-    CNY: {
-        originalName: "Renminbi / Yuan",
-        firstUse: "1948",
-        introducedYear: "1948",
-        introducedBy: "People's Bank of China",
-        family: "Yuan",
-        minorUnit: "1 Yuan = 10 jiao = 100 fen"
-    },
-
-    KRW: {
-        originalName: "South Korean Won",
-        firstUse: "1902 / modern won 1962",
-        introducedYear: "1962",
-        introducedBy: "Bank of Korea",
-        family: "Won",
-        minorUnit: "No current minor unit in ordinary use"
-    },
-
-    AUD: {
-        originalName: "Australian Dollar",
-        firstUse: "1966",
-        introducedYear: "1966",
-        introducedBy: "Australian Government",
-        family: "Dollar",
-        minorUnit: "1 Dollar = 100 cents"
-    },
-
-    CAD: {
-        originalName: "Canadian Dollar",
-        firstUse: "1858",
-        introducedYear: "1858",
-        introducedBy: "Province of Canada",
-        family: "Dollar",
-        minorUnit: "1 Dollar = 100 cents"
-    },
-
-    CHF: {
-        originalName: "Swiss Franc",
-        firstUse: "1850",
-        introducedYear: "1850",
-        introducedBy: "Swiss Confederation",
-        family: "Franc",
-        minorUnit: "1 Franc = 100 centimes"
-    },
-
-    BRL: {
-        originalName: "Brazilian Real",
-        firstUse: "1994",
-        introducedYear: "1994",
-        introducedBy: "Government of Brazil",
-        family: "Real",
-        minorUnit: "1 Real = 100 centavos"
-    },
-
-    ZAR: {
-        originalName: "South African Rand",
-        firstUse: "1961",
-        introducedYear: "1961",
-        introducedBy: "South African Reserve Bank",
-        family: "Rand",
-        minorUnit: "1 Rand = 100 cents"
-    },
-
-    SGD: {
-        originalName: "Singapore Dollar",
-        firstUse: "1967",
-        introducedYear: "1967",
-        introducedBy: "Board of Commissioners of Currency Singapore",
-        family: "Dollar",
-        minorUnit: "1 Dollar = 100 cents"
-    },
-
-    MYR: {
-        originalName: "Malaysian Ringgit",
-        firstUse: "1967",
-        introducedYear: "1967",
-        introducedBy: "Bank Negara Malaysia",
-        family: "Ringgit",
-        minorUnit: "1 Ringgit = 100 sen"
-    },
-
-    THB: {
-        originalName: "Thai Baht",
-        firstUse: "19th century",
-        introducedYear: "1897",
-        introducedBy: "Kingdom of Siam",
-        family: "Baht",
-        minorUnit: "1 Baht = 100 satang"
-    },
-
-    IDR: {
-        originalName: "Indonesian Rupiah",
-        firstUse: "1946",
-        introducedYear: "1946",
-        introducedBy: "Government of Indonesia",
-        family: "Rupiah",
-        minorUnit: "1 Rupiah = 100 sen historically"
-    },
-
-    PKR: {
-        originalName: "Pakistani Rupee",
-        firstUse: "1947",
-        introducedYear: "1947",
-        introducedBy: "Government of Pakistan",
-        family: "Rupee",
-        minorUnit: "1 Rupee = 100 paisa"
-    },
-
-    BDT: {
-        originalName: "Bangladeshi Taka",
-        firstUse: "1972",
-        introducedYear: "1972",
-        introducedBy: "Government of Bangladesh",
-        family: "Taka",
-        minorUnit: "1 Taka = 100 poisha"
-    },
-
-    NPR: {
-        originalName: "Nepalese Rupee",
-        firstUse: "1932",
-        introducedYear: "1932",
-        introducedBy: "Kingdom of Nepal",
-        family: "Rupee",
-        minorUnit: "1 Rupee = 100 paisa"
-    },
-
-    PHP: {
-        originalName: "Philippine Peso",
-        firstUse: "1898",
-        introducedYear: "1946",
-        introducedBy: "Republic of the Philippines",
-        family: "Peso",
-        minorUnit: "1 Peso = 100 centavos"
-    },
-
-    MXN: {
-        originalName: "Mexican Peso",
-        firstUse: "1823",
-        introducedYear: "1993",
-        introducedBy: "Bank of Mexico / Government of Mexico",
-        family: "Peso",
-        minorUnit: "1 Peso = 100 centavos"
-    },
-
-    ARS: {
-        originalName: "Argentine Peso",
-        firstUse: "1826",
-        introducedYear: "1992",
-        introducedBy: "Government of Argentina",
-        family: "Peso",
-        minorUnit: "1 Peso = 100 centavos"
-    },
-
-    CLP: {
-        originalName: "Chilean Peso",
-        firstUse: "1817",
-        introducedYear: "1975",
-        introducedBy: "Government of Chile",
-        family: "Peso",
-        minorUnit: "No current subdivision in ordinary use"
-    },
-
-    COP: {
-        originalName: "Colombian Peso",
-        firstUse: "1810",
-        introducedYear: "1810",
-        introducedBy: "Republic of Colombia",
-        family: "Peso",
-        minorUnit: "1 Peso = 100 centavos"
-    },
-
-    PEN: {
-        originalName: "Sol",
-        firstUse: "1991",
-        introducedYear: "1991",
-        introducedBy: "Central Reserve Bank of Peru",
-        family: "Sol",
-        minorUnit: "1 Sol = 100 céntimos"
-    },
-
-    TRY: {
-        originalName: "Turkish Lira",
-        firstUse: "1844",
-        introducedYear: "2005",
-        introducedBy: "Republic of Turkey",
-        family: "Lira",
-        minorUnit: "1 Lira = 100 kuruş"
-    },
-
-    RUB: {
-        originalName: "Russian Ruble",
-        firstUse: "13th century",
-        introducedYear: "1704",
-        introducedBy: "Russian monetary reform",
-        family: "Ruble",
-        minorUnit: "1 Ruble = 100 kopeks"
-    },
-
-    PLN: {
-        originalName: "Polish Złoty",
-        firstUse: "15th century",
-        introducedYear: "1995",
-        introducedBy: "National Bank of Poland",
-        family: "Złoty",
-        minorUnit: "1 Złoty = 100 groszy"
-    },
-
-    CZK: {
-        originalName: "Czech Koruna",
-        firstUse: "1993",
-        introducedYear: "1993",
-        introducedBy: "Czech National Bank",
-        family: "Koruna",
-        minorUnit: "1 Koruna = 100 haléřů"
-    },
-
-    HUF: {
-        originalName: "Hungarian Forint",
-        firstUse: "1946",
-        introducedYear: "1946",
-        introducedBy: "National Bank of Hungary",
-        family: "Forint",
-        minorUnit: "No current minor unit in ordinary use"
-    },
-
-    NOK: {
-        originalName: "Norwegian Krone",
-        firstUse: "1875",
-        introducedYear: "1875",
-        introducedBy: "Kingdom of Norway",
-        family: "Krone",
-        minorUnit: "1 Krone = 100 øre"
-    },
-
-    SEK: {
-        originalName: "Swedish Krona",
-        firstUse: "1873",
-        introducedYear: "1873",
-        introducedBy: "Swedish Riksbank",
-        family: "Krona",
-        minorUnit: "1 Krona = 100 öre"
-    },
-
-    DKK: {
-        originalName: "Danish Krone",
-        firstUse: "1875",
-        introducedYear: "1875",
-        introducedBy: "Kingdom of Denmark",
-        family: "Krone",
-        minorUnit: "1 Krone = 100 øre"
-    },
-
-    NZD: {
-        originalName: "New Zealand Dollar",
-        firstUse: "1967",
-        introducedYear: "1967",
-        introducedBy: "Reserve Bank of New Zealand",
-        family: "Dollar",
-        minorUnit: "1 Dollar = 100 cents"
-    },
-
-    NGN: {
-        originalName: "Nigerian Naira",
-        firstUse: "1973",
-        introducedYear: "1973",
-        introducedBy: "Central Bank of Nigeria",
-        family: "Naira",
-        minorUnit: "1 Naira = 100 kobo"
-    },
-
-    GHS: {
-        originalName: "Ghanaian Cedi",
-        firstUse: "1965",
-        introducedYear: "2007",
-        introducedBy: "Bank of Ghana",
-        family: "Cedi",
-        minorUnit: "1 Cedi = 100 pesewas"
-    },
-
-    KES: {
-        originalName: "Kenyan Shilling",
-        firstUse: "1966",
-        introducedYear: "1966",
-        introducedBy: "Central Bank of Kenya",
-        family: "Shilling",
-        minorUnit: "1 Shilling = 100 cents"
-    },
-
-    EGP: {
-        originalName: "Egyptian Pound",
-        firstUse: "1834",
-        introducedYear: "1834",
-        introducedBy: "Egyptian monetary authorities",
-        family: "Pound",
-        minorUnit: "1 Pound = 100 piastres"
-    },
-
-    MAD: {
-        originalName: "Moroccan Dirham",
-        firstUse: "1960",
-        introducedYear: "1960",
-        introducedBy: "Bank Al-Maghrib",
-        family: "Dirham",
-        minorUnit: "1 Dirham = 100 centimes"
-    },
-
-    AED: {
-        originalName: "United Arab Emirates Dirham",
-        firstUse: "1973",
-        introducedYear: "1973",
-        introducedBy: "United Arab Emirates Currency Board",
-        family: "Dirham",
-        minorUnit: "1 Dirham = 100 fils"
-    },
-
-    SAR: {
-        originalName: "Saudi Riyal",
-        firstUse: "1932",
-        introducedYear: "1932",
-        introducedBy: "Saudi Arabian Monetary Authority",
-        family: "Riyal",
-        minorUnit: "1 Riyal = 100 halalas"
-    },
-
-    KWD: {
-        originalName: "Kuwaiti Dinar",
-        firstUse: "1961",
-        introducedYear: "1961",
-        introducedBy: "Central Bank of Kuwait",
-        family: "Dinar",
-        minorUnit: "1 Dinar = 1000 fils"
-    },
-
-    BHD: {
-        originalName: "Bahraini Dinar",
-        firstUse: "1965",
-        introducedYear: "1965",
-        introducedBy: "Bahrain Monetary Agency",
-        family: "Dinar",
-        minorUnit: "1 Dinar = 1000 fils"
-    },
-
-    QAR: {
-        originalName: "Qatari Riyal",
-        firstUse: "1966",
-        introducedYear: "1966",
-        introducedBy: "Qatar Monetary Agency",
-        family: "Riyal",
-        minorUnit: "1 Riyal = 100 dirhams"
-    },
-
-    OMR: {
-        originalName: "Omani Rial",
-        firstUse: "1970",
-        introducedYear: "1970",
-        introducedBy: "Sultanate of Oman",
-        family: "Rial",
-        minorUnit: "1 Rial = 1000 baisa"
-    },
-
-    JOD: {
-        originalName: "Jordanian Dinar",
-        firstUse: "1950",
-        introducedYear: "1950",
-        introducedBy: "Central Bank of Jordan",
-        family: "Dinar",
-        minorUnit: "1 Dinar = 100 piastres"
-    },
-
-    VND: {
-        originalName: "Vietnamese Đồng",
-        firstUse: "1946",
-        introducedYear: "1946",
-        introducedBy: "State Bank of Vietnam",
-        family: "Đồng",
-        minorUnit: "No current minor unit in ordinary use"
-    },
-
-    ZMW: {
-        originalName: "Zambian Kwacha",
-        firstUse: "1968",
-        introducedYear: "1968",
-        introducedBy: "Bank of Zambia",
-        family: "Kwacha",
-        minorUnit: "1 Kwacha = 100 ngwee"
-    },
-
-    ZWG: {
-        originalName: "Zimbabwe Gold",
-        firstUse: "2024",
-        introducedYear: "2024",
-        introducedBy: "Reserve Bank of Zimbabwe",
-        family: "Zimbabwe Gold",
-        minorUnit: "1 ZiG = 100 cents"
-    },
-
-    XOF: {
-        originalName: "West African CFA Franc",
-        firstUse: "1945",
-        introducedYear: "1945",
-        introducedBy: "French monetary system / West African monetary institutions",
-        family: "CFA Franc",
-        minorUnit: "No current minor unit in ordinary use"
-    },
-
-    XAF: {
-        originalName: "Central African CFA Franc",
-        firstUse: "1945",
-        introducedYear: "1945",
-        introducedBy: "French monetary system / Central African monetary institutions",
-        family: "CFA Franc",
-        minorUnit: "No current minor unit in ordinary use"
-    }
-
+    AFN:{originalName:"Afghani",firstUse:"1925",introducedYear:"1925",introducedBy:"Kingdom of Afghanistan",family:"Afghani",minorUnit:"1 Afghani = 100 pul"},
+    ALL:{originalName:"Lek",firstUse:"1926",introducedYear:"1926",introducedBy:"Bank of Albania",family:"Lek",minorUnit:"1 Lek = 100 qindarka"},
+    EUR:{originalName:"Euro",firstUse:"1999",introducedYear:"1999 / 2002",introducedBy:"European Monetary Union",family:"Euro",minorUnit:"1 Euro = 100 cents"},
+    GBP:{originalName:"Pound Sterling",firstUse:"8th century",introducedYear:"1707",introducedBy:"Kingdom of Great Britain / later United Kingdom",family:"Pound",minorUnit:"1 Pound = 100 pence"},
+    USD:{originalName:"United States Dollar",firstUse:"1792",introducedYear:"1792",introducedBy:"United States government",family:"Dollar",minorUnit:"1 Dollar = 100 cents"},
+    JPY:{originalName:"Yen",firstUse:"1871",introducedYear:"1871",introducedBy:"Government of Japan",family:"Yen",minorUnit:"No current minor unit in ordinary use"},
+    INR:{originalName:"Indian Rupee",firstUse:"16th century",introducedYear:"2010 symbol / modern system",introducedBy:"Reserve Bank of India / Government of India",family:"Rupee",minorUnit:"1 Rupee = 100 paise"},
+    LKR:{originalName:"Sri Lankan Rupee",firstUse:"1872",introducedYear:"1949 monetary authority",introducedBy:"Central Bank of Ceylon",family:"Rupee",minorUnit:"1 Rupee = 100 cents"},
+    CNY:{originalName:"Renminbi / Yuan",firstUse:"1948",introducedYear:"1948",introducedBy:"People's Bank of China",family:"Yuan",minorUnit:"1 Yuan = 10 jiao = 100 fen"},
+    KRW:{originalName:"South Korean Won",firstUse:"1902 / modern won 1962",introducedYear:"1962",introducedBy:"Bank of Korea",family:"Won",minorUnit:"No current minor unit in ordinary use"},
+    AUD:{originalName:"Australian Dollar",firstUse:"1966",introducedYear:"1966",introducedBy:"Australian Government",family:"Dollar",minorUnit:"1 Dollar = 100 cents"},
+    CAD:{originalName:"Canadian Dollar",firstUse:"1858",introducedYear:"1858",introducedBy:"Province of Canada",family:"Dollar",minorUnit:"1 Dollar = 100 cents"},
+    CHF:{originalName:"Swiss Franc",firstUse:"1850",introducedYear:"1850",introducedBy:"Swiss Confederation",family:"Franc",minorUnit:"1 Franc = 100 centimes"},
+    BRL:{originalName:"Brazilian Real",firstUse:"1994",introducedYear:"1994",introducedBy:"Government of Brazil",family:"Real",minorUnit:"1 Real = 100 centavos"},
+    ZAR:{originalName:"South African Rand",firstUse:"1961",introducedYear:"1961",introducedBy:"South African Reserve Bank",family:"Rand",minorUnit:"1 Rand = 100 cents"},
+    SGD:{originalName:"Singapore Dollar",firstUse:"1967",introducedYear:"1967",introducedBy:"Board of Commissioners of Currency Singapore",family:"Dollar",minorUnit:"1 Dollar = 100 cents"},
+    MYR:{originalName:"Malaysian Ringgit",firstUse:"1967",introducedYear:"1967",introducedBy:"Bank Negara Malaysia",family:"Ringgit",minorUnit:"1 Ringgit = 100 sen"},
+    THB:{originalName:"Thai Baht",firstUse:"19th century",introducedYear:"1897",introducedBy:"Kingdom of Siam",family:"Baht",minorUnit:"1 Baht = 100 satang"},
+    IDR:{originalName:"Indonesian Rupiah",firstUse:"1946",introducedYear:"1946",introducedBy:"Government of Indonesia",family:"Rupiah",minorUnit:"1 Rupiah = 100 sen historically"},
+    PKR:{originalName:"Pakistani Rupee",firstUse:"1947",introducedYear:"1947",introducedBy:"Government of Pakistan",family:"Rupee",minorUnit:"1 Rupee = 100 paisa"},
+    BDT:{originalName:"Bangladeshi Taka",firstUse:"1972",introducedYear:"1972",introducedBy:"Government of Bangladesh",family:"Taka",minorUnit:"1 Taka = 100 poisha"},
+    NPR:{originalName:"Nepalese Rupee",firstUse:"1932",introducedYear:"1932",introducedBy:"Kingdom of Nepal",family:"Rupee",minorUnit:"1 Rupee = 100 paisa"},
+    PHP:{originalName:"Philippine Peso",firstUse:"1898",introducedYear:"1946",introducedBy:"Republic of the Philippines",family:"Peso",minorUnit:"1 Peso = 100 centavos"},
+    MXN:{originalName:"Mexican Peso",firstUse:"1823",introducedYear:"1993",introducedBy:"Bank of Mexico / Government of Mexico",family:"Peso",minorUnit:"1 Peso = 100 centavos"},
+    ARS:{originalName:"Argentine Peso",firstUse:"1826",introducedYear:"1992",introducedBy:"Government of Argentina",family:"Peso",minorUnit:"1 Peso = 100 centavos"},
+    CLP:{originalName:"Chilean Peso",firstUse:"1817",introducedYear:"1975",introducedBy:"Government of Chile",family:"Peso",minorUnit:"No current subdivision in ordinary use"},
+    COP:{originalName:"Colombian Peso",firstUse:"1810",introducedYear:"1810",introducedBy:"Republic of Colombia",family:"Peso",minorUnit:"1 Peso = 100 centavos"},
+    PEN:{originalName:"Sol",firstUse:"1991",introducedYear:"1991",introducedBy:"Central Reserve Bank of Peru",family:"Sol",minorUnit:"1 Sol = 100 céntimos"},
+    TRY:{originalName:"Turkish Lira",firstUse:"1844",introducedYear:"2005",introducedBy:"Republic of Turkey",family:"Lira",minorUnit:"1 Lira = 100 kuruş"},
+    RUB:{originalName:"Russian Ruble",firstUse:"13th century",introducedYear:"1704",introducedBy:"Russian monetary reform",family:"Ruble",minorUnit:"1 Ruble = 100 kopeks"},
+    PLN:{originalName:"Polish Złoty",firstUse:"15th century",introducedYear:"1995",introducedBy:"National Bank of Poland",family:"Złoty",minorUnit:"1 Złoty = 100 groszy"},
+    CZK:{originalName:"Czech Koruna",firstUse:"1993",introducedYear:"1993",introducedBy:"Czech National Bank",family:"Koruna",minorUnit:"1 Koruna = 100 haléřů"},
+    HUF:{originalName:"Hungarian Forint",firstUse:"1946",introducedYear:"1946",introducedBy:"National Bank of Hungary",family:"Forint",minorUnit:"No current minor unit in ordinary use"},
+    NOK:{originalName:"Norwegian Krone",firstUse:"1875",introducedYear:"1875",introducedBy:"Kingdom of Norway",family:"Krone",minorUnit:"1 Krone = 100 øre"},
+    SEK:{originalName:"Swedish Krona",firstUse:"1873",introducedYear:"1873",introducedBy:"Swedish Riksbank",family:"Krona",minorUnit:"1 Krona = 100 öre"},
+    DKK:{originalName:"Danish Krone",firstUse:"1875",introducedYear:"1875",introducedBy:"Kingdom of Denmark",family:"Krone",minorUnit:"1 Krone = 100 øre"},
+    NZD:{originalName:"New Zealand Dollar",firstUse:"1967",introducedYear:"1967",introducedBy:"Reserve Bank of New Zealand",family:"Dollar",minorUnit:"1 Dollar = 100 cents"},
+    NGN:{originalName:"Nigerian Naira",firstUse:"1973",introducedYear:"1973",introducedBy:"Central Bank of Nigeria",family:"Naira",minorUnit:"1 Naira = 100 kobo"},
+    GHS:{originalName:"Ghanaian Cedi",firstUse:"1965",introducedYear:"2007",introducedBy:"Bank of Ghana",family:"Cedi",minorUnit:"1 Cedi = 100 pesewas"},
+    KES:{originalName:"Kenyan Shilling",firstUse:"1966",introducedYear:"1966",introducedBy:"Central Bank of Kenya",family:"Shilling",minorUnit:"1 Shilling = 100 cents"},
+    EGP:{originalName:"Egyptian Pound",firstUse:"1834",introducedYear:"1834",introducedBy:"Egyptian monetary authorities",family:"Pound",minorUnit:"1 Pound = 100 piastres"},
+    MAD:{originalName:"Moroccan Dirham",firstUse:"1960",introducedYear:"1960",introducedBy:"Bank Al-Maghrib",family:"Dirham",minorUnit:"1 Dirham = 100 centimes"},
+    AED:{originalName:"United Arab Emirates Dirham",firstUse:"1973",introducedYear:"1973",introducedBy:"United Arab Emirates Currency Board",family:"Dirham",minorUnit:"1 Dirham = 100 fils"},
+    SAR:{originalName:"Saudi Riyal",firstUse:"1932",introducedYear:"1932",introducedBy:"Saudi Arabian Monetary Authority",family:"Riyal",minorUnit:"1 Riyal = 100 halalas"},
+    KWD:{originalName:"Kuwaiti Dinar",firstUse:"1961",introducedYear:"1961",introducedBy:"Central Bank of Kuwait",family:"Dinar",minorUnit:"1 Dinar = 1000 fils"},
+    BHD:{originalName:"Bahraini Dinar",firstUse:"1965",introducedYear:"1965",introducedBy:"Bahrain Monetary Agency",family:"Dinar",minorUnit:"1 Dinar = 1000 fils"},
+    QAR:{originalName:"Qatari Riyal",firstUse:"1966",introducedYear:"1966",introducedBy:"Qatar Monetary Agency",family:"Riyal",minorUnit:"1 Riyal = 100 dirhams"},
+    OMR:{originalName:"Omani Rial",firstUse:"1970",introducedYear:"1970",introducedBy:"Sultanate of Oman",family:"Rial",minorUnit:"1 Rial = 1000 baisa"},
+    JOD:{originalName:"Jordanian Dinar",firstUse:"1950",introducedYear:"1950",introducedBy:"Central Bank of Jordan",family:"Dinar",minorUnit:"1 Dinar = 100 piastres"},
+    VND:{originalName:"Vietnamese Đồng",firstUse:"1946",introducedYear:"1946",introducedBy:"State Bank of Vietnam",family:"Đồng",minorUnit:"No current minor unit in ordinary use"},
+    ZMW:{originalName:"Zambian Kwacha",firstUse:"1968",introducedYear:"1968",introducedBy:"Bank of Zambia",family:"Kwacha",minorUnit:"1 Kwacha = 100 ngwee"},
+    ZWG:{originalName:"Zimbabwe Gold",firstUse:"2024",introducedYear:"2024",introducedBy:"Reserve Bank of Zimbabwe",family:"Zimbabwe Gold",minorUnit:"1 ZiG = 100 cents"},
+    XOF:{originalName:"West African CFA Franc",firstUse:"1945",introducedYear:"1945",introducedBy:"French monetary system / West African monetary institutions",family:"CFA Franc",minorUnit:"No current minor unit in ordinary use"},
+    XAF:{originalName:"Central African CFA Franc",firstUse:"1945",introducedYear:"1945",introducedBy:"French monetary system / Central African monetary institutions",family:"CFA Franc",minorUnit:"No current minor unit in ordinary use"}
 };
 
 
 /* =========================================================
-   CENTRAL BANKS / MONETARY AUTHORITIES
+   CENTRAL BANKS
    ========================================================= */
 
 function getCentralBank(country, code) {
-
     const banks = {
-
-        USD: "Federal Reserve System",
-        EUR: "European Central Bank",
-        GBP: "Bank of England",
-        JPY: "Bank of Japan",
-        LKR: "Central Bank of Sri Lanka",
-        INR: "Reserve Bank of India",
-        CNY: "People's Bank of China",
-        AUD: "Reserve Bank of Australia",
-        CAD: "Bank of Canada",
-        CHF: "Swiss National Bank",
-        BRL: "Central Bank of Brazil",
-        ZAR: "South African Reserve Bank",
-        SGD: "Monetary Authority of Singapore",
-        MYR: "Bank Negara Malaysia",
-        THB: "Bank of Thailand",
-        IDR: "Bank Indonesia",
-        PKR: "State Bank of Pakistan",
-        BDT: "Bangladesh Bank",
-        NPR: "Nepal Rastra Bank",
-        PHP: "Bangko Sentral ng Pilipinas",
-        NGN: "Central Bank of Nigeria",
-        GHS: "Bank of Ghana",
-        KES: "Central Bank of Kenya",
-        EGP: "Central Bank of Egypt",
-        MAD: "Bank Al-Maghrib",
-        TRY: "Central Bank of the Republic of Türkiye",
-        RUB: "Bank of Russia",
-        PLN: "Narodowy Bank Polski",
-        CZK: "Czech National Bank",
-        HUF: "Magyar Nemzeti Bank",
-        NOK: "Norges Bank",
-        SEK: "Sveriges Riksbank",
-        DKK: "Danmarks Nationalbank",
-        NZD: "Reserve Bank of New Zealand",
-        AED: "Central Bank of the UAE",
-        SAR: "Saudi Central Bank",
-        KWD: "Central Bank of Kuwait",
-        BHD: "Central Bank of Bahrain",
-        QAR: "Qatar Central Bank",
-        OMR: "Central Bank of Oman",
-        JOD: "Central Bank of Jordan",
-        ZMW: "Bank of Zambia",
-        VND: "State Bank of Vietnam",
-        ZWG: "Reserve Bank of Zimbabwe"
-
+        USD:"Federal Reserve System",
+        EUR:"European Central Bank",
+        GBP:"Bank of England",
+        JPY:"Bank of Japan",
+        LKR:"Central Bank of Sri Lanka",
+        INR:"Reserve Bank of India",
+        CNY:"People's Bank of China",
+        AUD:"Reserve Bank of Australia",
+        CAD:"Bank of Canada",
+        CHF:"Swiss National Bank",
+        BRL:"Central Bank of Brazil",
+        ZAR:"South African Reserve Bank",
+        SGD:"Monetary Authority of Singapore",
+        MYR:"Bank Negara Malaysia",
+        THB:"Bank of Thailand",
+        IDR:"Bank Indonesia",
+        PKR:"State Bank of Pakistan",
+        BDT:"Bangladesh Bank",
+        NPR:"Nepal Rastra Bank",
+        PHP:"Bangko Sentral ng Pilipinas",
+        NGN:"Central Bank of Nigeria",
+        GHS:"Bank of Ghana",
+        KES:"Central Bank of Kenya",
+        EGP:"Central Bank of Egypt",
+        MAD:"Bank Al-Maghrib",
+        TRY:"Central Bank of the Republic of Türkiye",
+        RUB:"Bank of Russia",
+        PLN:"Narodowy Bank Polski",
+        CZK:"Czech National Bank",
+        HUF:"Magyar Nemzeti Bank",
+        NOK:"Norges Bank",
+        SEK:"Sveriges Riksbank",
+        DKK:"Danmarks Nationalbank",
+        NZD:"Reserve Bank of New Zealand",
+        AED:"Central Bank of the UAE",
+        SAR:"Saudi Central Bank",
+        KWD:"Central Bank of Kuwait",
+        BHD:"Central Bank of Bahrain",
+        QAR:"Qatar Central Bank",
+        OMR:"Central Bank of Oman",
+        JOD:"Central Bank of Jordan",
+        ZMW:"Bank of Zambia",
+        VND:"State Bank of Vietnam",
+        ZWG:"Reserve Bank of Zimbabwe"
     };
 
     return banks[code] || "National monetary authority";
-
 }
 
 
@@ -945,38 +391,9 @@ function getCentralBank(country, code) {
    ========================================================= */
 
 function getCurrencyType(code) {
-
-    if (code === "EUR") {
-        return "Fiat currency / monetary union";
-    }
-
-    if (
-        [
-            "USD",
-            "AUD",
-            "CAD",
-            "NZD",
-            "SGD",
-            "BND",
-            "FJD",
-            "BBD",
-            "BSD",
-            "BZD",
-            "GYD",
-            "JMD",
-            "LRD",
-            "NAD",
-            "SBD",
-            "SRD",
-            "TTD",
-            "XCD"
-        ].includes(code)
-    ) {
-        return "Fiat currency";
-    }
-
-    return "Fiat currency";
-
+    return code === "EUR"
+        ? "Fiat currency / monetary union"
+        : "Fiat currency";
 }
 
 
@@ -985,43 +402,20 @@ function getCurrencyType(code) {
    ========================================================= */
 
 function getDescription(currency, country, code) {
-
     const specialDescriptions = {
-
-        USD:
-            "The United States dollar is the official currency of the United States and is also used as a legal tender or reference currency in several other economies.",
-
-        EUR:
-            "The euro is the common currency of the euro area and is issued within the Eurosystem under the monetary policy framework of the European Central Bank.",
-
-        LKR:
-            "The Sri Lankan rupee is the official currency of Sri Lanka and is issued under the authority of the Central Bank of Sri Lanka.",
-
-        INR:
-            "The Indian rupee is the official currency of India and is issued and managed within the monetary framework of the Reserve Bank of India.",
-
-        GBP:
-            "Pound sterling is the official currency of the United Kingdom and is issued under the authority of the Bank of England and other UK issuing arrangements.",
-
-        JPY:
-            "The Japanese yen is the official currency of Japan and is issued under the monetary authority of the Bank of Japan.",
-
-        CNY:
-            "The renminbi is the official currency of China. The yuan is the principal unit of the renminbi system.",
-
-        CHF:
-            "The Swiss franc is the official currency of Switzerland and Liechtenstein and is issued within the Swiss monetary system.",
-
-        ZWG:
-            "Zimbabwe Gold, commonly abbreviated as ZiG, is Zimbabwe's currency introduced by the Reserve Bank of Zimbabwe in 2024."
-
+        USD:"The United States dollar is the official currency of the United States and is also used as a legal tender or reference currency in several other economies.",
+        EUR:"The euro is the common currency of the euro area and is issued within the Eurosystem under the monetary policy framework of the European Central Bank.",
+        LKR:"The Sri Lankan rupee is the official currency of Sri Lanka and is issued under the authority of the Central Bank of Sri Lanka.",
+        INR:"The Indian rupee is the official currency of India and is issued and managed within the monetary framework of the Reserve Bank of India.",
+        GBP:"Pound sterling is the official currency of the United Kingdom and is issued under the authority of the Bank of England and other UK issuing arrangements.",
+        JPY:"The Japanese yen is the official currency of Japan and is issued under the monetary authority of the Bank of Japan.",
+        CNY:"The renminbi is the official currency of China. The yuan is the principal unit of the renminbi system.",
+        CHF:"The Swiss franc is the official currency of Switzerland and Liechtenstein and is issued within the Swiss monetary system.",
+        ZWG:"Zimbabwe Gold, commonly abbreviated as ZiG, is Zimbabwe's currency introduced by the Reserve Bank of Zimbabwe in 2024."
     };
 
-    return (
-        specialDescriptions[code] ||
-        `The ${currency} is the official or principal currency used in ${country}. Its internationally recognized ISO 4217 alphabetic code is ${code}. Currency systems can change over time through monetary reforms, economic policy and institutional changes.`
-    );
-
+    return specialDescriptions[code] ||
+        `The ${currency} is the official or principal currency used in ${country}. Its internationally recognized ISO 4217 alphabetic code is ${code}. Currency systems can change over time through monetary reforms, economic policy and institutional changes.`;
 }
 
 
@@ -1031,7 +425,6 @@ function getDescription(currency, country, code) {
 
 const currencies = countryData
     .map(function(item) {
-
         const [
             country,
             flag,
@@ -1041,68 +434,29 @@ const currencies = countryData
             continent
         ] = item;
 
-        const history =
-            currencyHistory[code] || {};
+        const currencyInfo = currencyHistory[code] || {};
 
         return {
-
             country,
             flag,
             currency,
             code,
             symbol,
             continent,
-
-            centralBank:
-                getCentralBank(country, code),
-
-            currencyType:
-                getCurrencyType(code),
-
-            description:
-                getDescription(
-                    currency,
-                    country,
-                    code
-                ),
-
-            originalName:
-                history.originalName ||
-                currency,
-
-            firstUse:
-                history.firstUse ||
-                "Historical information varies",
-
-            introducedYear:
-                history.introducedYear ||
-                "See currency history",
-
-            introducedBy:
-                history.introducedBy ||
-                getCentralBank(country, code),
-
-            family:
-                history.family ||
-                currency,
-
-            minorUnit:
-                history.minorUnit ||
-                "Varies by currency",
-
-            numericCode:
-                numericCodes[code] ||
-                "Not available"
-
+            centralBank:getCentralBank(country, code),
+            currencyType:getCurrencyType(code),
+            description:getDescription(currency, country, code),
+            originalName:currencyInfo.originalName || currency,
+            firstUse:currencyInfo.firstUse || "Historical information varies",
+            introducedYear:currencyInfo.introducedYear || "See currency history",
+            introducedBy:currencyInfo.introducedBy || getCentralBank(country, code),
+            family:currencyInfo.family || currency,
+            minorUnit:currencyInfo.minorUnit || "Varies by currency",
+            numericCode:numericCodes[code] || "Not available"
         };
-
     })
     .sort(function(a, b) {
-
-        return a.country.localeCompare(
-            b.country
-        );
-
+        return a.country.localeCompare(b.country);
     });
 
 
@@ -1111,19 +465,13 @@ const currencies = countryData
    ========================================================= */
 
 const uniqueCurrencies = [];
-
 const seenCodes = new Set();
 
 currencies.forEach(function(currency) {
-
     if (!seenCodes.has(currency.code)) {
-
         seenCodes.add(currency.code);
-
         uniqueCurrencies.push(currency);
-
     }
-
 });
 
 
@@ -1132,30 +480,26 @@ currencies.forEach(function(currency) {
    ========================================================= */
 
 let selectedContinent = "All";
-
 let selectedLetter = "All";
+let converterRequestId = 0;
+let currencyValueRequestId = 0;
 
 
 /* =========================================================
    DOM READY
    ========================================================= */
 
-document.addEventListener(
-    "DOMContentLoaded",
-    function() {
+document.addEventListener("DOMContentLoaded", function() {
+    setupTheme();
+    setupHomePage();
+    setupCurrencyPage();
+    setupConverterPage();
+    setupRipples();
 
-        setupTheme();
-
-        setupHomePage();
-
-        setupCurrencyPage();
-
-        setupConverterPage();
-
-        setupRipples();
-
-    }
-);
+    console.log(
+        `World Currencies loaded: ${currencies.length} countries / ${uniqueCurrencies.length} unique currencies`
+    );
+});
 
 
 /* =========================================================
@@ -1163,60 +507,55 @@ document.addEventListener(
    ========================================================= */
 
 function setupTheme() {
+    const themeToggle = document.getElementById("themeToggle");
 
-    const themeToggle =
-        document.getElementById(
-            "themeToggle"
-        );
+    if (!themeToggle) return;
 
-    if (!themeToggle) {
-        return;
+    let savedTheme = null;
+
+    try {
+        savedTheme = localStorage.getItem("worldCurrenciesTheme");
+    } catch (error) {
+        savedTheme = null;
     }
 
-    const savedTheme =
-        localStorage.getItem(
-            "worldCurrenciesTheme"
-        );
+    const isDark = savedTheme === "dark";
 
-    if (savedTheme === "dark") {
+    document.body.classList.toggle("dark-mode", isDark);
+    updateThemeButton(themeToggle, isDark);
 
-        document.body.classList.add(
-            "dark-mode"
-        );
+    themeToggle.addEventListener("click", function() {
+        const dark = document.body.classList.toggle("dark-mode");
 
-        themeToggle.textContent = "☀️";
-
-    } else {
-
-        themeToggle.textContent = "🌙";
-
-    }
-
-
-    themeToggle.addEventListener(
-        "click",
-        function() {
-
-            document.body.classList.toggle(
-                "dark-mode"
-            );
-
-            const isDark =
-                document.body.classList.contains(
-                    "dark-mode"
-                );
-
+        try {
             localStorage.setItem(
                 "worldCurrenciesTheme",
-                isDark ? "dark" : "light"
+                dark ? "dark" : "light"
             );
-
-            themeToggle.textContent =
-                isDark ? "☀️" : "🌙";
-
+        } catch (error) {
+            // Ignore localStorage errors.
         }
+
+        updateThemeButton(themeToggle, dark);
+    });
+}
+
+function updateThemeButton(button, isDark) {
+    button.textContent = isDark ? "☀️" : "🌙";
+
+    button.setAttribute(
+        "aria-label",
+        isDark
+            ? "Switch to light mode"
+            : "Switch to dark mode"
     );
 
+    button.setAttribute(
+        "title",
+        isDark
+            ? "Switch to light mode"
+            : "Switch to dark mode"
+    );
 }
 
 
@@ -1225,281 +564,135 @@ function setupTheme() {
    ========================================================= */
 
 function setupHomePage() {
+    const heroSection = document.getElementById("heroSection");
+    const currenciesSection = document.getElementById("currencies");
 
-    const heroSection =
-        document.getElementById(
-            "heroSection"
-        );
+    if (!heroSection || !currenciesSection) return;
 
-    const currenciesSection =
-        document.getElementById(
-            "currencies"
-        );
+    const exploreButton = document.getElementById("exploreButton");
+    const currenciesLink = document.getElementById("currenciesLink");
+    const homeLink = document.getElementById("homeLink");
+    const backToHero = document.getElementById("backToHero");
+    const searchInput = document.getElementById("searchInput");
 
-    const exploreButton =
-        document.getElementById(
-            "exploreButton"
-        );
-
-    const currenciesLink =
-        document.getElementById(
-            "currenciesLink"
-        );
-
-    const homeLink =
-        document.getElementById(
-            "homeLink"
-        );
-
-    const backToHero =
-        document.getElementById(
-            "backToHero"
-        );
-
-    if (
-        !heroSection ||
-        !currenciesSection
-    ) {
-        return;
-    }
-
-
-    function showCurrencies(
-        shouldScroll = true
-    ) {
-
+    function showCurrencies(shouldScroll = true) {
         selectedContinent = "All";
         selectedLetter = "All";
 
-        document
-            .querySelectorAll(".filter-btn")
-            .forEach(function(button) {
+        document.querySelectorAll(".filter-btn").forEach(function(button) {
+            button.classList.toggle(
+                "active",
+                (button.dataset.continent || "All") === "All"
+            );
+        });
 
-                button.classList.toggle(
-                    "active",
-                    button.dataset.continent === "All"
-                );
+        heroSection.classList.add("hero-hidden");
 
-            });
-
-        heroSection.classList.add(
-            "hero-hidden"
-        );
-
-        currenciesSection.classList.remove(
-            "hidden-section"
-        );
-
-        currenciesSection.classList.add(
-            "section-open"
-        );
+        currenciesSection.classList.remove("hidden-section");
+        currenciesSection.classList.add("section-open");
 
         renderAlphabet();
-
         renderCurrencies();
 
         if (shouldScroll) {
-
-            setTimeout(
-                function() {
-
-                    currenciesSection.scrollIntoView({
-                        behavior: "smooth",
-                        block: "start"
-                    });
-
-                },
-                80
-            );
-
+            setTimeout(function() {
+                currenciesSection.scrollIntoView({
+                    behavior:"smooth",
+                    block:"start"
+                });
+            }, 80);
         }
-
     }
-
 
     function showHome() {
+        heroSection.classList.remove("hero-hidden");
 
-        heroSection.classList.remove(
-            "hero-hidden"
-        );
-
-        currenciesSection.classList.add(
-            "hidden-section"
-        );
-
-        currenciesSection.classList.remove(
-            "section-open"
-        );
+        currenciesSection.classList.add("hidden-section");
+        currenciesSection.classList.remove("section-open");
 
         window.scrollTo({
-            top: 0,
-            behavior: "smooth"
+            top:0,
+            behavior:"smooth"
         });
-
     }
-
 
     if (exploreButton) {
-
-        exploreButton.addEventListener(
-            "click",
-            function() {
-
-                showCurrencies(true);
-
-                history.replaceState(
-                    null,
-                    "",
-                    "#currencies"
-                );
-
-            }
-        );
-
+        exploreButton.addEventListener("click", function() {
+            showCurrencies(true);
+            history.replaceState(null, "", "#currencies");
+        });
     }
-
 
     if (currenciesLink) {
+        currenciesLink.addEventListener("click", function(event) {
+            event.preventDefault();
 
-        currenciesLink.addEventListener(
-            "click",
-            function(event) {
-
-                event.preventDefault();
-
-                showCurrencies(true);
-
-                history.replaceState(
-                    null,
-                    "",
-                    "#currencies"
-                );
-
-            }
-        );
-
+            showCurrencies(true);
+            history.replaceState(null, "", "#currencies");
+        });
     }
-
 
     if (homeLink) {
+        homeLink.addEventListener("click", function(event) {
+            event.preventDefault();
 
-        homeLink.addEventListener(
-            "click",
-            function(event) {
-
-                event.preventDefault();
-
-                history.replaceState(
-                    null,
-                    "",
-                    "index.html"
-                );
-
-                showHome();
-
-            }
-        );
-
-    }
-
-
-    if (backToHero) {
-
-        backToHero.addEventListener(
-            "click",
-            function() {
-
-                history.replaceState(
-                    null,
-                    "",
-                    "index.html"
-                );
-
-                showHome();
-
-            }
-        );
-
-    }
-
-
-    const searchInput =
-        document.getElementById(
-            "searchInput"
-        );
-
-    if (searchInput) {
-
-        searchInput.addEventListener(
-            "input",
-            function() {
-
-                renderCurrencies();
-
-            }
-        );
-
-    }
-
-
-    document
-        .querySelectorAll(".filter-btn")
-        .forEach(function(button) {
-
-            button.addEventListener(
-                "click",
-                function() {
-
-                    selectedContinent =
-                        button.dataset.continent;
-
-                    document
-                        .querySelectorAll(".filter-btn")
-                        .forEach(function(btn) {
-
-                            btn.classList.remove(
-                                "active"
-                            );
-
-                        });
-
-                    button.classList.add(
-                        "active"
-                    );
-
-                    renderCurrencies();
-
-                }
+            history.replaceState(
+                null,
+                "",
+                window.location.pathname
             );
 
+            showHome();
         });
-
-
-    if (
-        window.location.hash ===
-        "#currencies"
-    ) {
-
-        showCurrencies(false);
-
-        setTimeout(
-            function() {
-
-                currenciesSection.scrollIntoView({
-                    behavior: "smooth",
-                    block: "start"
-                });
-
-            },
-            100
-        );
-
-    } else {
-
-        showHome();
-
     }
 
+    if (backToHero) {
+        backToHero.addEventListener("click", function() {
+            history.replaceState(
+                null,
+                "",
+                window.location.pathname
+            );
+
+            showHome();
+        });
+    }
+
+    if (searchInput) {
+        searchInput.addEventListener("input", function() {
+            renderCurrencies();
+        });
+    }
+
+    document.querySelectorAll(".filter-btn").forEach(function(button) {
+        button.addEventListener("click", function() {
+            selectedContinent =
+                button.dataset.continent || "All";
+
+            document
+                .querySelectorAll(".filter-btn")
+                .forEach(function(btn) {
+                    btn.classList.remove("active");
+                });
+
+            button.classList.add("active");
+
+            renderCurrencies();
+        });
+    });
+
+    if (window.location.hash === "#currencies") {
+        showCurrencies(false);
+
+        setTimeout(function() {
+            currenciesSection.scrollIntoView({
+                behavior:"smooth",
+                block:"start"
+            });
+        }, 100);
+    } else {
+        showHome();
+    }
 }
 
 
@@ -1508,105 +701,61 @@ function setupHomePage() {
    ========================================================= */
 
 function renderAlphabet() {
-
     const alphabetContainer =
-        document.getElementById(
-            "alphabetButtons"
-        );
+        document.getElementById("alphabetButtons");
 
-    if (!alphabetContainer) {
-        return;
-    }
+    if (!alphabetContainer) return;
 
     alphabetContainer.innerHTML = "";
 
+    const letters = [
+        "All",
+        ..."ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    ];
 
-    const allButton =
-        document.createElement(
-            "button"
-        );
-
-    allButton.type = "button";
-
-    allButton.className =
-        "letter-btn active";
-
-    allButton.dataset.letter = "All";
-
-    allButton.textContent = "All";
-
-    alphabetContainer.appendChild(
-        allButton
-    );
-
-
-    const alphabet =
-        "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-            .split("");
-
-
-    alphabet.forEach(function(letter) {
-
-        const button =
-            document.createElement(
-                "button"
-            );
+    letters.forEach(function(letter) {
+        const button = document.createElement("button");
 
         button.type = "button";
+        button.className = "letter-btn";
+        button.dataset.letter = letter;
+        button.textContent = letter;
 
-        button.className =
-            "letter-btn";
+        const active = selectedLetter === letter;
 
-        button.dataset.letter =
-            letter;
-
-        button.textContent =
-            letter;
-
-        alphabetContainer.appendChild(
-            button
+        button.classList.toggle("active", active);
+        button.setAttribute(
+            "aria-pressed",
+            active ? "true" : "false"
         );
 
+        alphabetContainer.appendChild(button);
     });
-
 
     alphabetContainer
         .querySelectorAll(".letter-btn")
         .forEach(function(button) {
+            button.addEventListener("click", function() {
+                selectedLetter =
+                    button.dataset.letter || "All";
 
-            button.addEventListener(
-                "click",
-                function() {
+                alphabetContainer
+                    .querySelectorAll(".letter-btn")
+                    .forEach(function(btn) {
+                        const active =
+                            btn.dataset.letter === selectedLetter;
 
-                    selectedLetter =
-                        button.dataset.letter;
+                        btn.classList.toggle("active", active);
 
+                        btn.setAttribute(
+                            "aria-pressed",
+                            active ? "true" : "false"
+                        );
+                    });
 
-                    alphabetContainer
-                        .querySelectorAll(
-                            ".letter-btn"
-                        )
-                        .forEach(function(btn) {
-
-                            btn.classList.remove(
-                                "active"
-                            );
-
-                        });
-
-
-                    button.classList.add(
-                        "active"
-                    );
-
-
-                    renderCurrencies();
-
-                }
-            );
-
+                renderCurrencies();
+            });
         });
-
 }
 
 
@@ -1615,62 +764,36 @@ function renderAlphabet() {
    ========================================================= */
 
 function getFilteredCurrencies() {
-
     const searchInput =
-        document.getElementById(
-            "searchInput"
+        document.getElementById("searchInput");
+
+    const searchTerm = searchInput
+        ? searchInput.value.trim().toLowerCase()
+        : "";
+
+    return currencies.filter(function(currency) {
+        const matchesContinent =
+            selectedContinent === "All" ||
+            currency.continent === selectedContinent;
+
+        const matchesLetter =
+            selectedLetter === "All" ||
+            currency.country.charAt(0).toUpperCase() === selectedLetter;
+
+        const matchesSearch =
+            !searchTerm ||
+            currency.country.toLowerCase().includes(searchTerm) ||
+            currency.currency.toLowerCase().includes(searchTerm) ||
+            currency.code.toLowerCase().includes(searchTerm) ||
+            currency.symbol.toLowerCase().includes(searchTerm) ||
+            currency.numericCode.toLowerCase().includes(searchTerm);
+
+        return (
+            matchesContinent &&
+            matchesLetter &&
+            matchesSearch
         );
-
-    const searchTerm =
-        searchInput
-            ? searchInput.value
-                .trim()
-                .toLowerCase()
-            : "";
-
-
-    return currencies.filter(
-        function(currency) {
-
-            const matchesContinent =
-                selectedContinent === "All" ||
-                currency.continent ===
-                selectedContinent;
-
-
-            const matchesLetter =
-                selectedLetter === "All" ||
-                currency.country
-                    .charAt(0)
-                    .toUpperCase() ===
-                selectedLetter;
-
-
-            const matchesSearch =
-                !searchTerm ||
-
-                currency.country
-                    .toLowerCase()
-                    .includes(searchTerm) ||
-
-                currency.currency
-                    .toLowerCase()
-                    .includes(searchTerm) ||
-
-                currency.code
-                    .toLowerCase()
-                    .includes(searchTerm);
-
-
-            return (
-                matchesContinent &&
-                matchesLetter &&
-                matchesSearch
-            );
-
-        }
-    );
-
+    });
 }
 
 
@@ -1679,158 +802,118 @@ function getFilteredCurrencies() {
    ========================================================= */
 
 function renderCurrencies() {
-
     const container =
-        document.getElementById(
-            "currencyContainer"
-        );
+        document.getElementById("currencyContainer");
 
     const countElement =
-        document.getElementById(
-            "currencyCount"
-        );
+        document.getElementById("currencyCount");
 
-    if (!container) {
-        return;
-    }
+    if (!container) return;
 
-
-    const filtered =
-        getFilteredCurrencies();
-
+    const filtered = getFilteredCurrencies();
 
     container.innerHTML = "";
 
-
     if (countElement) {
-
         countElement.textContent =
             `Showing ${filtered.length} of ${currencies.length} countries`;
-
     }
 
-
     if (filtered.length === 0) {
-
         container.innerHTML = `
-
             <div class="no-results">
-
-                <div class="no-results-icon">
-                    ⌕
-                </div>
-
-                <h3>
-                    No results found
-                </h3>
-
+                <div class="no-results-icon">⌕</div>
+                <h3>No results found</h3>
                 <p>
-                    Try another country,
-                    currency, ISO code or filter.
+                    Try another country, currency,
+                    ISO code or filter.
                 </p>
-
             </div>
-
         `;
 
         return;
-
     }
 
+    const fragment =
+        document.createDocumentFragment();
 
-    filtered.forEach(
-        function(currency, index) {
+    filtered.forEach(function(currency, index) {
+        const card =
+            document.createElement("article");
 
-            const card =
-                document.createElement(
-                    "article"
-                );
+        card.className = "currency-card";
 
+        card.style.animationDelay =
+            `${Math.min(index * 0.025, 0.3)}s`;
 
-            card.className =
-                "currency-card";
+        card.setAttribute("tabindex", "0");
+        card.setAttribute("role", "link");
 
+        card.setAttribute(
+            "aria-label",
+            `View ${currency.country} ${currency.currency} details`
+        );
 
-            card.style.animationDelay =
-                `${Math.min(index * 0.025, 0.3)}s`;
+        card.innerHTML = `
+            <div class="currency-card-top">
+                <span class="country-flag">
+                    ${escapeHTML(currency.flag)}
+                </span>
 
+                <span class="continent-tag">
+                    ${escapeHTML(currency.continent)}
+                </span>
+            </div>
 
-            card.innerHTML = `
+            <h3>
+                ${escapeHTML(currency.country)}
+            </h3>
 
-                <div class="currency-card-top">
+            <p class="currency-name">
+                ${escapeHTML(currency.currency)}
+            </p>
 
-                    <span class="country-flag">
-                        ${currency.flag}
-                    </span>
+            <div class="currency-code">
+                <strong>
+                    ${escapeHTML(currency.code)}
+                </strong>
 
-                    <span class="continent-tag">
-                        ${currency.continent}
-                    </span>
+                <span>
+                    ${escapeHTML(currency.symbol)}
+                </span>
+            </div>
 
-                </div>
+            <div class="card-arrow">
+                →
+            </div>
+        `;
 
+        function openDetails() {
+            const params = new URLSearchParams();
 
-                <h3>
-                    ${escapeHTML(currency.country)}
-                </h3>
+            params.set("country", currency.country);
+            params.set("code", currency.code);
 
-
-                <p class="currency-name">
-                    ${escapeHTML(currency.currency)}
-                </p>
-
-
-                <div class="currency-code">
-
-                    <strong>
-                        ${escapeHTML(currency.code)}
-                    </strong>
-
-                    <span>
-                        ${escapeHTML(currency.symbol)}
-                    </span>
-
-                </div>
-
-
-                <div class="card-arrow">
-                    →
-                </div>
-
-            `;
-
-
-            card.addEventListener(
-                "click",
-                function() {
-
-                    const params =
-                        new URLSearchParams();
-
-                    params.set(
-                        "country",
-                        currency.country
-                    );
-
-                    params.set(
-                        "code",
-                        currency.code
-                    );
-
-                    window.location.href =
-                        `pages/currency.html?${params.toString()}`;
-
-                }
-            );
-
-
-            container.appendChild(
-                card
-            );
-
+            window.location.href =
+                `pages/currency.html?${params.toString()}`;
         }
-    );
 
+        card.addEventListener("click", openDetails);
+
+        card.addEventListener("keydown", function(event) {
+            if (
+                event.key === "Enter" ||
+                event.key === " "
+            ) {
+                event.preventDefault();
+                openDetails();
+            }
+        });
+
+        fragment.appendChild(card);
+    });
+
+    container.appendChild(fragment);
 }
 
 
@@ -1839,98 +922,58 @@ function renderCurrencies() {
    ========================================================= */
 
 function setupCurrencyPage() {
-
     const currencyTitle =
-        document.getElementById(
-            "currencyTitle"
-        );
+        document.getElementById("currencyTitle");
 
-    if (!currencyTitle) {
-        return;
-    }
-
+    if (!currencyTitle) return;
 
     const params =
-        new URLSearchParams(
-            window.location.search
-        );
-
+        new URLSearchParams(window.location.search);
 
     const countryParam =
         params.get("country");
 
     const codeParam =
-        params.get("code");
-
+        params.get("code")
+            ? params.get("code").trim().toUpperCase()
+            : "";
 
     let currency = null;
 
-
     if (countryParam) {
+        const normalizedCountry =
+            countryParam.trim().toLowerCase();
 
-        currency =
-            currencies.find(
-                function(item) {
-
-                    return (
-                        item.country.toLowerCase() ===
-                        countryParam.toLowerCase() &&
-                        (
-                            !codeParam ||
-                            item.code === codeParam
-                        )
-                    );
-
-                }
+        currency = currencies.find(function(item) {
+            return (
+                item.country.toLowerCase() === normalizedCountry &&
+                (!codeParam || item.code === codeParam)
             );
-
+        });
     }
-
 
     if (!currency && codeParam) {
-
-        currency =
-            currencies.find(
-                function(item) {
-
-                    return item.code === codeParam;
-
-                }
-            );
-
+        currency = currencies.find(function(item) {
+            return item.code === codeParam;
+        });
     }
 
-
     if (!currency) {
-
         currencyTitle.textContent =
             "Currency Not Found";
 
-        const subtitle =
-            document.getElementById(
-                "currencySubtitle"
-            );
-
-        if (subtitle) {
-
-            subtitle.textContent =
-                "The requested currency could not be found.";
-
-        }
+        setText(
+            "currencySubtitle",
+            "The requested currency could not be found."
+        );
 
         return;
-
     }
-
 
     document.title =
         `${currency.country} - ${currency.currency} | World Currencies`;
 
-
-    setText(
-        "currencyFlag",
-        currency.flag
-    );
+    setText("currencyFlag", currency.flag);
 
     setText(
         "currencyTitle",
@@ -1942,116 +985,34 @@ function setupCurrencyPage() {
         `${currency.code} • ${currency.continent}`
     );
 
-    setText(
-        "country",
-        currency.country
-    );
+    setText("country", currency.country);
+    setText("currencyName", currency.currency);
+    setText("currencyCode", currency.code);
+    setText("currencySymbol", currency.symbol);
+    setText("continent", currency.continent);
+    setText("centralBank", currency.centralBank);
+    setText("currencyType", currency.currencyType);
+    setText("description", currency.description);
+    setText("originalName", currency.originalName);
+    setText("firstUse", currency.firstUse);
+    setText("introducedYear", currency.introducedYear);
+    setText("introducedBy", currency.introducedBy);
+    setText("technicalCode", currency.code);
+    setText("numericCode", currency.numericCode);
+    setText("minorUnit", currency.minorUnit);
+    setText("currencyFamily", currency.family);
 
-    setText(
-        "currencyName",
-        currency.currency
-    );
+    const users = currencies
+        .filter(function(item) {
+            return item.code === currency.code;
+        })
+        .map(function(item) {
+            return item.country;
+        });
 
-    setText(
-        "currencyCode",
-        currency.code
-    );
+    setText("usedBy", users.join(", "));
 
-    setText(
-        "currencySymbol",
-        currency.symbol
-    );
-
-    setText(
-        "continent",
-        currency.continent
-    );
-
-    setText(
-        "centralBank",
-        currency.centralBank
-    );
-
-    setText(
-        "currencyType",
-        currency.currencyType
-    );
-
-    setText(
-        "description",
-        currency.description
-    );
-
-    setText(
-        "originalName",
-        currency.originalName
-    );
-
-    setText(
-        "firstUse",
-        currency.firstUse
-    );
-
-    setText(
-        "introducedYear",
-        currency.introducedYear
-    );
-
-    setText(
-        "introducedBy",
-        currency.introducedBy
-    );
-
-    setText(
-        "technicalCode",
-        currency.code
-    );
-
-    setText(
-        "numericCode",
-        currency.numericCode
-    );
-
-    setText(
-        "minorUnit",
-        currency.minorUnit
-    );
-
-    setText(
-        "currencyFamily",
-        currency.family
-    );
-
-
-    const users =
-        currencies
-            .filter(
-                function(item) {
-
-                    return item.code ===
-                        currency.code;
-
-                }
-            )
-            .map(
-                function(item) {
-
-                    return item.country;
-
-                }
-            );
-
-
-    setText(
-        "usedBy",
-        users.join(", ")
-    );
-
-
-    loadCurrencyValue(
-        currency.code
-    );
-
+    loadCurrencyValue(currency.code);
 }
 
 
@@ -2060,68 +1021,61 @@ function setupCurrencyPage() {
    ========================================================= */
 
 async function loadCurrencyValue(code) {
-
     const valueElement =
-        document.getElementById(
-            "currentValue"
-        );
+        document.getElementById("currentValue");
 
-    if (!valueElement) {
-        return;
-    }
+    if (!valueElement) return;
 
+    const requestId = ++currencyValueRequestId;
+
+    const requestCode =
+        String(code)
+            .trim()
+            .toUpperCase();
 
     valueElement.textContent =
         "Loading live value...";
 
-
     try {
-
-        const response =
-            await fetch(
-                `https://open.er-api.com/v6/latest/${encodeURIComponent(code)}`
-            );
-
+        const response = await fetch(
+            `https://open.er-api.com/v6/latest/${encodeURIComponent(requestCode)}`,
+            {
+                method:"GET",
+                cache:"no-store"
+            }
+        );
 
         if (!response.ok) {
-            throw new Error(
-                "Network response failed"
-            );
+            throw new Error("Network response failed");
         }
 
+        const data = await response.json();
 
-        const data =
-            await response.json();
-
+        if (requestId !== currencyValueRequestId) {
+            return;
+        }
 
         if (
             data &&
             data.result === "success" &&
             data.rates &&
-            typeof data.rates.USD === "number"
+            Number.isFinite(data.rates.USD)
         ) {
-
-            const usdRate =
-                data.rates.USD;
-
-
             valueElement.textContent =
-                `1 ${code} ≈ ${formatRate(usdRate)} USD`;
-
+                `1 ${requestCode} ≈ ${formatRate(data.rates.USD)} USD`;
         } else {
-
             valueElement.textContent =
                 "Live value unavailable";
-
         }
 
     } catch (error) {
+        if (requestId !== currencyValueRequestId) {
+            return;
+        }
 
         valueElement.textContent =
             "Live value unavailable";
-
     }
-
 }
 
 
@@ -2130,402 +1084,318 @@ async function loadCurrencyValue(code) {
    ========================================================= */
 
 function setupConverterPage() {
-
     const fromSelect =
-        document.getElementById(
-            "fromCurrency"
-        );
+        document.getElementById("fromCurrency");
 
     const toSelect =
-        document.getElementById(
-            "toCurrency"
-        );
+        document.getElementById("toCurrency");
 
-    if (
-        !fromSelect ||
-        !toSelect
-    ) {
+    if (!fromSelect || !toSelect) {
         return;
     }
 
+    const sortedCurrencies =
+        uniqueCurrencies
+            .slice()
+            .sort(function(a, b) {
+                return a.code.localeCompare(b.code);
+            });
 
-    uniqueCurrencies
-        .slice()
-        .sort(
-            function(a, b) {
+    fromSelect.innerHTML = "";
+    toSelect.innerHTML = "";
 
-                return a.code.localeCompare(
-                    b.code
-                );
+    sortedCurrencies.forEach(function(currency) {
+        const label =
+            `${currency.code} — ${currency.currency}`;
 
-            }
-        )
-        .forEach(
-            function(currency) {
+        const fromOption =
+            document.createElement("option");
 
-                const fromOption =
-                    document.createElement(
-                        "option"
-                    );
+        fromOption.value = currency.code;
+        fromOption.textContent = label;
 
-                fromOption.value =
-                    currency.code;
+        fromSelect.appendChild(fromOption);
 
-                fromOption.textContent =
-                    `${currency.code} — ${currency.currency}`;
+        const toOption =
+            document.createElement("option");
 
-                fromSelect.appendChild(
-                    fromOption
-                );
+        toOption.value = currency.code;
+        toOption.textContent = label;
 
-
-                const toOption =
-                    document.createElement(
-                        "option"
-                    );
-
-                toOption.value =
-                    currency.code;
-
-                toOption.textContent =
-                    `${currency.code} — ${currency.currency}`;
-
-                toSelect.appendChild(
-                    toOption
-                );
-
-            }
-        );
-
+        toSelect.appendChild(toOption);
+    });
 
     if (
-        [...fromSelect.options]
-            .some(
-                function(option) {
-                    return option.value === "USD";
-                }
-            )
+        sortedCurrencies.some(function(currency) {
+            return currency.code === "USD";
+        })
     ) {
-
         fromSelect.value = "USD";
-
     }
-
 
     if (
-        [...toSelect.options]
-            .some(
-                function(option) {
-                    return option.value === "EUR";
-                }
-            )
+        sortedCurrencies.some(function(currency) {
+            return currency.code === "EUR";
+        })
     ) {
-
         toSelect.value = "EUR";
-
     }
-
 
     const convertButton =
-        document.getElementById(
-            "convertButton"
-        );
+        document.getElementById("convertButton");
 
     const swapButton =
-        document.getElementById(
-            "swapButton"
-        );
+        document.getElementById("swapButton");
 
     const amountInput =
-        document.getElementById(
-            "amount"
-        );
-
+        document.getElementById("amount");
 
     if (convertButton) {
-
         convertButton.addEventListener(
             "click",
             convertCurrency
         );
-
     }
-
 
     if (swapButton) {
+        swapButton.addEventListener("click", function() {
+            const oldFrom = fromSelect.value;
 
-        swapButton.addEventListener(
-            "click",
-            function() {
+            fromSelect.value = toSelect.value;
+            toSelect.value = oldFrom;
 
-                const currentFrom =
-                    fromSelect.value;
+            convertCurrency();
 
-                fromSelect.value =
-                    toSelect.value;
+            swapButton.classList.add("swap-animate");
 
-                toSelect.value =
-                    currentFrom;
-
-
-                convertCurrency();
-
-                swapButton.classList.add(
-                    "swap-animate"
-                );
-
-                setTimeout(
-                    function() {
-
-                        swapButton.classList.remove(
-                            "swap-animate"
-                        );
-
-                    },
-                    350
-                );
-
-            }
-        );
-
+            setTimeout(function() {
+                swapButton.classList.remove("swap-animate");
+            }, 350);
+        });
     }
-
 
     if (amountInput) {
-
-        amountInput.addEventListener(
-            "keydown",
-            function(event) {
-
-                if (
-                    event.key === "Enter"
-                ) {
-
-                    convertCurrency();
-
-                }
-
+        amountInput.addEventListener("keydown", function(event) {
+            if (event.key === "Enter") {
+                event.preventDefault();
+                convertCurrency();
             }
-        );
-
+        });
     }
 
+    fromSelect.addEventListener(
+        "change",
+        convertCurrency
+    );
+
+    toSelect.addEventListener(
+        "change",
+        convertCurrency
+    );
 
     convertCurrency();
-
 }
 
 
 /* =========================================================
-   CONVERT
+   CONVERT CURRENCY
    ========================================================= */
 
 async function convertCurrency() {
-
     const amountInput =
-        document.getElementById(
-            "amount"
-        );
+        document.getElementById("amount");
 
     const fromSelect =
-        document.getElementById(
-            "fromCurrency"
-        );
+        document.getElementById("fromCurrency");
 
     const toSelect =
-        document.getElementById(
-            "toCurrency"
-        );
+        document.getElementById("toCurrency");
 
     const resultElement =
-        document.getElementById(
-            "conversionResult"
-        );
+        document.getElementById("conversionResult");
 
     const rateElement =
-        document.getElementById(
-            "exchangeRate"
-        );
+        document.getElementById("exchangeRate");
 
     const updatedElement =
-        document.getElementById(
-            "lastUpdated"
-        );
+        document.getElementById("lastUpdated");
 
     const statusElement =
-        document.getElementById(
-            "converterStatus"
-        );
+        document.getElementById("converterStatus");
 
-
-    if (
-        !amountInput ||
-        !fromSelect ||
-        !toSelect
-    ) {
+    if (!amountInput || !fromSelect || !toSelect) {
         return;
     }
 
+    const rawAmount =
+        amountInput.value.trim();
 
     const amount =
-        Number(
-            amountInput.value
-        );
-
+        Number(rawAmount);
 
     const from =
-        fromSelect.value;
+        String(fromSelect.value)
+            .trim()
+            .toUpperCase();
 
     const to =
-        toSelect.value;
-
+        String(toSelect.value)
+            .trim()
+            .toUpperCase();
 
     if (
+        rawAmount === "" ||
         !Number.isFinite(amount) ||
         amount < 0
     ) {
+        setText(
+            "converterStatus",
+            "Please enter a valid amount."
+        );
+
+        setText(
+            "conversionResult",
+            "Enter an amount to convert."
+        );
+
+        return;
+    }
+
+    const requestId =
+        ++converterRequestId;
+
+    setText(
+        "converterStatus",
+        "Fetching live exchange rate..."
+    );
+
+    if (resultElement) {
+        resultElement.textContent =
+            `${formatAmount(amount)} ${from} = Loading...`;
+    }
+
+    /*
+       Same currency:
+       No API request is required.
+    */
+
+    if (from === to) {
+        if (resultElement) {
+            resultElement.textContent =
+                `${formatAmount(amount)} ${from} = ${formatAmount(amount)} ${to}`;
+        }
+
+        if (rateElement) {
+            rateElement.textContent =
+                `Exchange Rate: 1 ${from} = 1 ${to}`;
+        }
+
+        if (updatedElement) {
+            updatedElement.textContent =
+                "Last updated: Not required";
+        }
 
         if (statusElement) {
-
             statusElement.textContent =
-                "Please enter a valid amount.";
-
+                "Conversion complete.";
         }
 
         return;
-
     }
-
-
-    if (statusElement) {
-
-        statusElement.textContent =
-            "Fetching live exchange rate...";
-
-    }
-
-
-    if (resultElement) {
-
-        resultElement.textContent =
-            `${formatAmount(amount)} ${from} = Loading...`;
-
-    }
-
 
     try {
-
-        const response =
-            await fetch(
-                `https://open.er-api.com/v6/latest/${encodeURIComponent(from)}`
-            );
-
+        const response = await fetch(
+            `https://open.er-api.com/v6/latest/${encodeURIComponent(from)}`,
+            {
+                method:"GET",
+                cache:"no-store"
+            }
+        );
 
         if (!response.ok) {
-
             throw new Error(
                 "Exchange-rate request failed"
             );
-
         }
-
 
         const data =
             await response.json();
 
+        if (requestId !== converterRequestId) {
+            return;
+        }
 
         if (
             !data ||
             data.result !== "success" ||
             !data.rates ||
-            typeof data.rates[to] !== "number"
+            !Number.isFinite(data.rates[to])
         ) {
-
             throw new Error(
                 "Rate unavailable"
             );
-
         }
 
-
         const rate =
-            data.rates[to];
-
+            Number(data.rates[to]);
 
         const converted =
             amount * rate;
 
-
         if (resultElement) {
-
             resultElement.textContent =
                 `${formatAmount(amount)} ${from} = ${formatAmount(converted)} ${to}`;
-
         }
-
 
         if (rateElement) {
-
             rateElement.textContent =
                 `Exchange Rate: 1 ${from} = ${formatRate(rate)} ${to}`;
-
         }
 
-
         if (updatedElement) {
-
             const time =
                 data.time_last_update_utc ||
                 new Date().toUTCString();
 
             updatedElement.textContent =
                 `Last updated: ${time}`;
-
         }
 
-
         if (statusElement) {
-
             statusElement.textContent =
                 "Live conversion complete.";
-
         }
 
     } catch (error) {
+        if (requestId !== converterRequestId) {
+            return;
+        }
 
         if (resultElement) {
-
             resultElement.textContent =
                 `${formatAmount(amount)} ${from} = — ${to}`;
-
         }
-
 
         if (rateElement) {
-
             rateElement.textContent =
                 "Exchange Rate: unavailable";
-
         }
-
 
         if (updatedElement) {
-
             updatedElement.textContent =
                 "Last updated: unavailable";
-
         }
-
 
         if (statusElement) {
-
             statusElement.textContent =
                 "Live exchange-rate data is currently unavailable.";
-
         }
 
+        console.warn(
+            "Currency conversion failed:",
+            error
+        );
     }
-
 }
 
 
@@ -2533,38 +1403,29 @@ async function convertCurrency() {
    HELPERS
    ========================================================= */
 
-function setText(
-    id,
-    value
-) {
-
+function setText(id, value) {
     const element =
         document.getElementById(id);
 
     if (element) {
-
         element.textContent =
-            value;
-
+            value == null ? "" : String(value);
     }
-
 }
 
 
 function formatAmount(value) {
+    if (!Number.isFinite(value)) {
+        return "—";
+    }
 
-    return new Intl.NumberFormat(
-        "en-US",
-        {
-            maximumFractionDigits: 6
-        }
-    ).format(value);
-
+    return new Intl.NumberFormat("en-US", {
+        maximumFractionDigits:6
+    }).format(value);
 }
 
 
 function formatRate(value) {
-
     if (!Number.isFinite(value)) {
         return "—";
     }
@@ -2574,36 +1435,26 @@ function formatRate(value) {
     }
 
     if (Math.abs(value) >= 1000) {
-
-        return value.toLocaleString(
-            "en-US",
-            {
-                maximumFractionDigits: 2
-            }
-        );
-
+        return value.toLocaleString("en-US", {
+            maximumFractionDigits:2
+        });
     }
 
     if (Math.abs(value) >= 1) {
-
         return value.toFixed(4);
-
     }
 
     return value.toFixed(6);
-
 }
 
 
 function escapeHTML(value) {
-
     return String(value)
-        .replaceAll("&", "&amp;")
-        .replaceAll("<", "&lt;")
-        .replaceAll(">", "&gt;")
-        .replaceAll('"', "&quot;")
-        .replaceAll("'", "&#039;");
-
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#039;");
 }
 
 
@@ -2611,8 +1462,55 @@ function escapeHTML(value) {
    RIPPLE / MICRO INTERACTIONS
    ========================================================= */
 
-function setupRipples() {
+function createRipple(button, event) {
+    if (!button) return;
 
+    const rect =
+        button.getBoundingClientRect();
+
+    const ripple =
+        document.createElement("span");
+
+    ripple.className = "ripple";
+
+    const size =
+        Math.max(rect.width, rect.height);
+
+    ripple.style.width =
+        `${size}px`;
+
+    ripple.style.height =
+        `${size}px`;
+
+    const clientX =
+        event &&
+        typeof event.clientX === "number"
+            ? event.clientX
+            : rect.left + rect.width / 2;
+
+    const clientY =
+        event &&
+        typeof event.clientY === "number"
+            ? event.clientY
+            : rect.top + rect.height / 2;
+
+    ripple.style.left =
+        `${clientX - rect.left - size / 2}px`;
+
+    ripple.style.top =
+        `${clientY - rect.top - size / 2}px`;
+
+    button.appendChild(ripple);
+
+    setTimeout(function() {
+        if (ripple && ripple.parentNode) {
+            ripple.remove();
+        }
+    }, 600);
+}
+
+
+function setupRipples() {
     const selectors = [
         ".hero-button",
         ".convert-button",
@@ -2624,78 +1522,28 @@ function setupRipples() {
         ".back-top-button"
     ];
 
+    document.addEventListener("click", function(event) {
+        if (
+            !event.target ||
+            typeof event.target.closest !== "function"
+        ) {
+            return;
+        }
 
-    document
-        .querySelectorAll(
-            selectors.join(",")
-        )
-        .forEach(
-            function(button) {
+        const button =
+            event.target.closest(
+                selectors.join(",")
+            );
 
-                button.addEventListener(
-                    "click",
-                    function(event) {
+        if (!button) return;
 
-                        const rect =
-                            button.getBoundingClientRect();
-
-
-                        const ripple =
-                            document.createElement(
-                                "span"
-                            );
-
-
-                        ripple.className =
-                            "ripple";
-
-
-                        const size =
-                            Math.max(
-                                rect.width,
-                                rect.height
-                            );
-
-
-                        ripple.style.width =
-                            `${size}px`;
-
-                        ripple.style.height =
-                            `${size}px`;
-
-
-                        ripple.style.left =
-                            `${event.clientX - rect.left - size / 2}px`;
-
-                        ripple.style.top =
-                            `${event.clientY - rect.top - size / 2}px`;
-
-
-                        button.appendChild(
-                            ripple
-                        );
-
-
-                        setTimeout(
-                            function() {
-
-                                ripple.remove();
-
-                            },
-                            600
-                        );
-
-                    }
-                );
-
-            }
-        );
-
+        createRipple(button, event);
+    });
 }
 
 
 /* =========================================================
-   SAFETY CHECK
+   FINAL DATA CHECK
    ========================================================= */
 
 console.log(
