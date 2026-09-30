@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ZxBee.github.io/world-currencies/sitemap.xml
