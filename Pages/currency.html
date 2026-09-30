@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Detailed information about world currencies."
+    >
+
+    <title>Currency Details - World Currencies</title>
+
+    <link
+        rel="stylesheet"
+        href="../style.css"
+    >
+
+</head>
+
+
+<body>
+
+<header>
+
+    <h1>World Currencies</h1>
+
+    <nav>
+
+        <a href="../index.html">
+            Home
+        </a>
+
+        <a href="../index.html#currencies">
+            Currencies
+        </a>
+
+        <a href="converter.html">
+            Converter
+        </a>
+
+        <a href="../index.html#about">
+            About
+        </a>
+
+    </nav>
+
+
+    <button
+        id="themeToggle"
+        class="theme-toggle"
+        type="button"
+        aria-label="Toggle dark mode"
+    >
+        🌙
+    </button>
+
+</header>
+
+
+<main>
+
+<section class="currency-details">
+
+
+    <!-- DETAILS HERO -->
+
+    <div class="details-hero">
+
+        <div
+            id="currencyFlag"
+            class="details-flag"
+        >
+            🌍
+        </div>
+
+        <h2 id="currencyTitle">
+            Currency Details
+        </h2>
+
+        <p
+            id="currencySubtitle"
+            class="currency-subtitle"
+        >
+            Currency information
+        </p>
+
+    </div>
+
+
+
+    <!-- BASIC INFORMATION -->
+
+    <div class="details-card">
+
+        <div class="card-heading">
+
+            <span class="card-icon">
+                ◎
+            </span>
+
+            <h3>
+                Currency Information
+            </h3>
+
+        </div>
+
+
+        <div class="info-grid">
+
+
+            <div class="info-item">
+
+                <span>
+                    Country
+                </span>
+
+                <strong id="country">
+                    —
+                </strong>
+
+            </div>
+
+
+            <div class="info-item">
+
+                <span>
+                    Currency
+                </span>
+
+                <strong id="currencyName">
+                    —
+                </strong>
+
+            </div>
+
+
+            <div class="info-item">
+
+                <span>
+                    ISO Code
+                </span>
+
+                <strong id="currencyCode">
+                    —
+                </strong>
+
+            </div>
+
+
+            <div class="info-item">
+
+                <span>
+                    Symbol
+                </span>
+
+                <strong id="currencySymbol">
+                    —
+                </strong>
+
+            </div>
+
+
+            <div class="info-item">
+
+                <span>
+                    Continent
+                </span>
+
+                <strong id="continent">
+                    —
+                </strong>
+
+            </div>
+
+
+            <div class="info-item">
+
+                <span>
+                    Currency Type
+                </span>
+
+                <strong id="currencyType">
+                    —
+                </strong>
+
+            </div>
+
+
+            <div class="info-item">
+
+                <span>
+                    Central Bank / Authority
+                </span>
+
+                <strong id="centralBank">
+                    —
+                </strong>
+
+            </div>
+
+
+            <div class="info-item">
+
+                <span>
+                    Current USD Value
+                </span>
+
+                <strong id="currentValue">
+                    Loading...
+                </strong>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- ABOUT CURRENCY -->
+
+    <div class="details-card">
+
+        <div class="card-heading">
+
+            <span class="card-icon">
+                ◈
+            </span>
+
+            <h3>
+                About This Currency
+            </h3>
+
+        </div>
+
+
+        <p
+            id="description"
+            class="about-description"
+        >
+            Loading currency information...
+        </p>
+
+
+        <div class="history-grid">
+
+
+            <div class="history-item">
+
+                <span>
+                    Original / First Name
+                </span>
+
+                <strong id="originalName">
+                    —
+                </strong>
+
+            </div>
+
+
+            <div class="history-item">
+
+                <span>
+                    First Use
+                </span>
+
+                <strong id="firstUse">
+                    —
+                </strong>
+
+            </div>
+
+
+            <div class="history-item">
+
+                <span>
+                    Introduced / Adopted
+                </span>
+
+                <strong id="introducedYear">
+                    —
+                </strong>
+
+            </div>
+
+
+            <div class="history-item">
+
+                <span>
+                    Introduced / Issued By
+                </span>
+
+                <strong id="introducedBy">
+                    —
+                </strong>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- TECHNICAL INFORMATION -->
+
+    <div class="details-card">
+
+        <div class="card-heading">
+
+            <span class="card-icon">
+                #
+            </span>
+
+            <h3>
+                Technical Information
+            </h3>
+
+        </div>
+
+
+        <div class="technical-list">
+
+
+            <div>
+
+                <span>
+                    ISO 4217 Alphabetic Code
+                </span>
+
+                <strong id="technicalCode">
+                    —
+                </strong>
+
+            </div>
+
+
+            <div>
+
+                <span>
+                    ISO 4217 Numeric Code
+                </span>
+
+                <strong id="numericCode">
+                    —
+                </strong>
+
+            </div>
+
+
+            <div>
+
+                <span>
+                    Minor Unit
+                </span>
+
+                <strong id="minorUnit">
+                    —
+                </strong>
+
+            </div>
+
+
+            <div>
+
+                <span>
+                    Currency Family
+                </span>
+
+                <strong id="currencyFamily">
+                    —
+                </strong>
+
+            </div>
+
+
+            <div>
+
+                <span>
+                    Countries Using This Currency
+                </span>
+
+                <strong id="usedBy">
+                    —
+                </strong>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- ACTIONS -->
+
+    <div class="details-actions">
+
+        <a
+            href="../index.html#currencies"
+            class="back-button"
+        >
+            ← Back to Currencies
+        </a>
+
+
+        <a
+            href="converter.html"
+            class="secondary-button"
+        >
+            Open Converter →
+        </a>
+
+    </div>
+
+
+</section>
+
+</main>
+
+
+<footer>
+
+    <p>
+        © 2026 World Currencies
+        <span class="footer-divider">•</span>
+        By MALIDU PzN
+    </p>
+
+</footer>
+
+
+<script src="../script.js"></script>
+
+</body>
+
+</html>

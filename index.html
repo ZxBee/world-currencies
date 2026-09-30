@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Explore countries, currencies, symbols and exchange rates from around the world."
+    >
+
+    <title>World Currencies</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body>
+
+<header>
+
+    <h1>
+        World Currencies
+    </h1>
+
+
+    <nav>
+
+        <a
+            href="index.html"
+            id="homeLink"
+        >
+            Home
+        </a>
+
+        <a
+            href="#currencies"
+            id="currenciesLink"
+        >
+            Currencies
+        </a>
+
+        <a
+            href="pages/converter.html"
+        >
+            Converter
+        </a>
+
+        <a
+            href="#about"
+        >
+            About
+        </a>
+
+    </nav>
+
+
+    <button
+        id="themeToggle"
+        class="theme-toggle"
+        type="button"
+        aria-label="Toggle dark mode"
+    >
+        🌙
+    </button>
+
+</header>
+
+
+
+<main>
+
+
+    <!-- HERO -->
+
+    <section
+        id="heroSection"
+        class="hero"
+    >
+
+        <span class="hero-label">
+            WORLD CURRENCIES
+        </span>
+
+
+        <h2>
+            Explore the Currencies of the World
+        </h2>
+
+
+        <p>
+            Discover countries, currencies, symbols and
+            exchange rates from around the world.
+        </p>
+
+
+        <button
+            id="exploreButton"
+            class="hero-button"
+            type="button"
+        >
+            Explore Currencies
+            <span>→</span>
+        </button>
+
+    </section>
+
+
+
+    <!-- CURRENCIES -->
+
+    <section
+        id="currencies"
+        class="currencies-section hidden-section"
+    >
+
+        <div class="section-heading">
+
+            <span class="section-label">
+                EXPLORE
+            </span>
+
+            <h2>
+                World Currencies
+            </h2>
+
+            <p>
+                Browse currencies by continent,
+                country or first letter.
+            </p>
+
+        </div>
+
+
+
+        <!-- SEARCH -->
+
+        <div class="search-box">
+
+            <input
+                type="search"
+                id="searchInput"
+                placeholder="Search country, currency or ISO code..."
+                autocomplete="off"
+            >
+
+        </div>
+
+
+
+        <!-- CONTINENT FILTER -->
+
+        <div class="filter-panel">
+
+            <button
+                class="filter-btn active"
+                type="button"
+                data-continent="All"
+            >
+                All
+            </button>
+
+            <button
+                class="filter-btn"
+                type="button"
+                data-continent="Africa"
+            >
+                Africa
+            </button>
+
+            <button
+                class="filter-btn"
+                type="button"
+                data-continent="Americas"
+            >
+                Americas
+            </button>
+
+            <button
+                class="filter-btn"
+                type="button"
+                data-continent="Asia"
+            >
+                Asia
+            </button>
+
+            <button
+                class="filter-btn"
+                type="button"
+                data-continent="Europe"
+            >
+                Europe
+            </button>
+
+            <button
+                class="filter-btn"
+                type="button"
+                data-continent="Oceania"
+            >
+                Oceania
+            </button>
+
+        </div>
+
+
+
+        <!-- A-Z -->
+
+        <div class="alphabet-panel">
+
+            <div
+                id="alphabetButtons"
+                class="alphabet-buttons"
+            >
+            </div>
+
+        </div>
+
+
+
+        <!-- COUNT -->
+
+        <div class="currency-list-header">
+
+            <span id="currencyCount">
+                Showing 195 of 195 countries
+            </span>
+
+
+            <button
+                id="backToHero"
+                class="back-top-button"
+                type="button"
+            >
+                ↑ Back
+            </button>
+
+        </div>
+
+
+
+        <!-- CARDS -->
+
+        <div
+            id="currencyContainer"
+            class="currency-grid"
+        >
+        </div>
+
+    </section>
+
+
+
+    <!-- ABOUT -->
+
+    <section
+        id="about"
+        class="about-section"
+    >
+
+        <div class="section-heading">
+
+            <span class="section-label">
+                ABOUT
+            </span>
+
+            <h2>
+                About World Currencies
+            </h2>
+
+            <p>
+                A simple reference for exploring currencies
+                used around the world.
+            </p>
+
+        </div>
+
+
+        <div class="about-content">
+
+            <p>
+                World Currencies brings country and currency
+                information together in one simple interface.
+                Explore currency names, ISO codes, symbols,
+                continents and additional historical information.
+            </p>
+
+
+            <p>
+                Exchange-rate values are retrieved from live
+                exchange-rate data when available.
+            </p>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+
+<footer>
+
+    <p>
+        © 2026 World Currencies
+        <span class="footer-divider">•</span>
+        By MALIDU PzN
+    </p>
+
+</footer>
+
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
